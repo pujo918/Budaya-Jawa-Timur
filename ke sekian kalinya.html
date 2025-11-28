@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksplorasi Budaya Jawa Timur</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Jawa Timur</div>
+        <ul class="nav-menu">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#budaya">Daftar Budaya</a></li>
+            <li><a href="#map">Map Interaktif</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#biodata">Biodata Pembuat</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav><!-- Hero Section -->
+<section id="beranda" class="hero" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Images/Hero/Background_Hero.jpg') center/cover no-repeat; background-attachment: fixed;">
+    <h1>Eksplorasi Budaya Jawa Timur</h1>
+    <p>Mengenal akar budaya, makna simbol, dan kekayaan tradisi dari berbagai daerah di Jawa Timur</p>
+    <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- Daftar Budaya -->
+<section id="budaya">
+    <h2 class="section-title fade-in">Daftar Budaya Jawa Timur</h2>
+    <div class="budaya-grid">
+        <div class="budaya-card fade-in" data-id="0">
+            <img src="Images/Daftar_Budaya/Reog_Ponorogo.jpg" alt="Reog Ponorogo">
+            <div class="budaya-info">
+                <h3>Reog Ponorogo</h3>
+                <p>Kabupaten Ponorogo</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+        </div>
+        <div class="budaya-card fade-in" data-id="1">
+            <img src="Images/Daftar_Budaya/Ludruk.jpg" alt="Ludruk">
+            <div class="budaya-info">
+                <h3>Ludruk</h3>
+                <p>Surabaya</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+        </div>
+        <div class="budaya-card fade-in" data-id="2">
+            <img src="Images/Daftar_Budaya/Tari_Remo.jpg" alt="Tari Remo">
+            <div class="budaya-info">
+                <h3>Tari Remo</h3>
+                <p>Jombang</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+        </div>
+        <div class="budaya-card fade-in" data-id="3">
+            <img src="Images/Daftar_Budaya/Karapan_Sapi.jpg" alt="Karapan Sapi">
+            <div class="budaya-info">
+                <h3>Karapan Sapi</h3>
+                <p>Madura</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+        </div>
+        <div class="budaya-card fade-in" data-id="4">
+            <img src="Images/Daftar_Budaya/Gandrung_Banyuwangi.jpg" alt="Gandrung Banyuwangi">
+            <div class="budaya-info">
+                <h3>Gandrung Banyuwangi</h3>
+                <p>Banyuwangi</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+        </div>
+        <div class="budaya-card fade-in" data-id="5">
+            <img src="Images/Daftar_Budaya/Topeng_Malang.jpg" alt="Topeng Malang">
+            <div class="budaya-info">
+                <h3>Topeng Malang</h3>
+                <p>Malang</p>
+                <button class="btn-detail">Lihat Detail</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal">
+    <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <img id="modal-img" src="" alt="">
+        <h2 id="modal-title"></h2>
+        <div class="detail-item">
+            <h4>Asal Daerah</h4>
+            <p id="modal-daerah"></p>
+        </div>
+        <div class="detail-item">
+            <h4>Asal-Usul</h4>
+            <p id="modal-asal"></p>
+        </div>
+        <div class="detail-item">
+            <h4>Deskripsi</h4>
+            <p id="modal-deskripsi"></p>
+        </div>
+    </div>
+</div>
+
+<!-- Map Interaktif Jawa Timur -->
+<section id="map" style="background: #0a0a0a; padding: 5rem 5%;">
+    <h2 class="section-title fade-in">Map Interaktif Budaya Jawa Timur</h2>
+    <p style="text-align: center; color: #ccc; margin-bottom: 3rem; font-size: 1.1rem;">Klik daerah yang menarik untuk melihat budaya khasnya!</p>
+    
+    <div class="map-container-interactive fade-in">
+        <svg class="map-svg-interactive" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#0a0a0a" d="M 0 0 L 1000 0 L 1000 600 L 0 600 Z" style="opacity:0;"/>
+            <path class="region-map" data-region="ponorogo" d="M 50 350 L 150 300 L 250 350 L 170 400 L 50 400 Z"/>
+            <text class="region-label-map" x="150" y="360">Ponorogo</text>
+            <path class="region-map" data-region="madiun" d="M 150 300 L 280 250 L 300 350 L 250 350 Z"/>
+            <text class="region-label-map" x="250" y="300">Madiun</text>
+            <path class="region-map" data-region="kediri" d="M 300 350 L 320 280 L 380 300 L 400 380 L 350 400 Z"/>
+            <text class="region-label-map" x="350" y="350">Kediri</text>
+            <path class="region-map" data-region="blitar" d="M 250 350 L 350 400 L 400 450 L 300 480 L 250 430 Z"/>
+            <text class="region-label-map" x="320" y="440">Blitar</text>
+            <path class="region-map" data-region="surabaya" d="M 400 280 L 480 250 L 550 280 L 500 350 Z"/>
+            <text class="region-label-map" x="480" y="300">Surabaya</text>
+            <path class="region-map" data-region="pasuruan" d="M 500 350 L 550 280 L 600 350 L 550 420 Z"/>
+            <text class="region-label-map" x="550" y="380">Pasuruan</text>
+            <path class="region-map" data-region="probolinggo" d="M 600 350 L 650 300 L 700 350 L 650 420 Z"/>
+            <text class="region-label-map" x="650" y="380">Probolinggo</text>
+            <path class="region-map" data-region="malang" d="M 400 380 L 480 450 L 550 420 L 480 500 L 420 500 Z"/>
+            <text class="region-label-map" x="480" y="450">Malang</text>
+            <path class="region-map" data-region="jember" d="M 650 420 L 700 350 L 780 420 L 700 500 Z"/>
+            <text class="region-label-map" x="720" y="450">Jember</text>
+            <path class="region-map" data-region="banyuwangi" d="M 780 420 L 850 400 L 900 450 L 800 550 L 700 500 Z"/>
+            <text class="region-label-map" x="830" y="470">Banyuwangi</text>
+            <path class="region-map" data-region="madura" d="M 550 80 L 750 120 L 700 200 L 500 150 Z"/>
+            <text class="region-label-map" x="650" y="140">Madura</text>
+        </svg>
+    </div>
+</section>
+
+<!-- Modal Map -->
+<div class="modal-map" id="modal-map">
+    <div class="modal-content-map">
+        <div class="modal-header-map">
+            <button class="close-btn-map" onclick="closeMapModal()">&times;</button>
+            <h2 id="modal-title-map">Nama Daerah</h2>
+            <p>Jawa Timur, Indonesia</p>
+        </div>
+        <div class="modal-body-map">
+            <div class="modal-image-map" id="modal-image-map">
+                <span id="modal-icon-map">🎭</span>
+            </div>
+
+            <div class="modal-grid-map">
+                <div class="info-card-map">
+                    <h4><span class="icon-map">💃</span> Tarian Khas</h4>
+                    <p id="modal-tarian-map">-</p>
+                </div>
+                <div class="info-card-map">
+                    <h4><span class="icon-map">🍲</span> Makanan Khas</h4>
+                    <p id="modal-makanan-map">-</p>
+                </div>
+                <div class="info-card-map">
+                    <h4><span class="icon-map">🗣️</span> Bahasa/Dialek</h4>
+                    <p id="modal-bahasa-map">-</p>
+                </div>
+                <div class="info-card-map">
+                    <h4><span class="icon-map">🎉</span> Budaya Unik</h4>
+                    <p id="modal-budaya-map">-</p>
+                </div>
+            </div>
+
+            <div class="budaya-highlight-map">
+                <h4>🌟 Keunikan Budaya</h4>
+                <p id="modal-deskripsi-map">Deskripsi lengkap tentang budaya daerah ini</p>
+            </div>
+        </div>
+
+        <div class="maskot-modal-map">
+            <img src="Images/Maskot/Maskot Eljavana (Main).png" alt="Eljavana" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+        </div>
+    </div>
+</div>
+
+<!-- Galeri -->
+<section id="galeri">
+    <h2 class="section-title fade-in">Galeri Budaya</h2>
+    
+    <!-- Row 1 -->
+    <div class="galeri-row swipe-container fade-in" data-slider="1">
+        <div class="swipe-track">
+            <!-- Reog Ponorogo -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri).jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri) 2.jpg" alt="Reog Ponorogo"></div>
+            <!-- Tari Remo -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri).jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri) 2.jpg" alt="Tari Remo"></div>
+            <!-- Karapan Sapi -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Karapan Sapi (Galeri).jpg" alt="Karapan Sapi"></div>
+            <!-- Gandrung Banyuwangi -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri).jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri) 2.jpg" alt="Gandrung Banyuwangi"></div>
+            <!-- Topeng Malang -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri).jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri) 2.jpg" alt="Topeng Malang"></div>
+            <!-- Bantengan -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Bantengan.jpg" alt="Bantengan"></div>
+            <!-- Repeat for smooth scrolling -->
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri).jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri) 2.jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri).jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri) 2.jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Karapan Sapi (Galeri).jpg" alt="Karapan Sapi"></div>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="galeri-row swipe-container fade-in" data-slider="2">
+        <div class="swipe-track">
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri).jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri) 2.jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri).jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri) 2.jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Bantengan.jpg" alt="Bantengan"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri).jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri) 2.jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri).jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri) 2.jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Karapan Sapi (Galeri).jpg" alt="Karapan Sapi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri).jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri) 2.jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri).jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri) 2.jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Bantengan.jpg" alt="Bantengan"></div>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="galeri-row swipe-container fade-in" data-slider="3">
+        <div class="swipe-track">
+            <div class="galeri-item-swipe"><img src="Images/Hero/Background_Hero.jpg" alt="Budaya Jawa Timur"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri).jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri) 2.jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri).jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri) 2.jpg" alt="Tari Remo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Karapan Sapi (Galeri).jpg" alt="Karapan Sapi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri).jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Gandrung Banyuwangi (Galeri) 2.jpg" alt="Gandrung Banyuwangi"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri).jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Topeng Malang (Galeri) 2.jpg" alt="Topeng Malang"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Bantengan.jpg" alt="Bantengan"></div>
+            <div class="galeri-item-swipe"><img src="Images/Hero/Background_Hero.jpg" alt="Budaya Jawa Timur"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri).jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Reog Ponorogo (Galeri) 2.jpg" alt="Reog Ponorogo"></div>
+            <div class="galeri-item-swipe"><img src="Images/Galeri/Tari Remo (Galeri).jpg" alt="Tari Remo"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Tentang -->
+<section id="tentang"><h2 class="section-title fade-in">Tentang Website</h2>
+        <div class="tentang-content fade-in">
+            <div class="tentang-text">
+                <p>Website ini didedikasikan untuk memperkenalkan dan melestarikan kekayaan budaya Jawa Timur kepada generasi muda dan masyarakat luas. Jawa Timur memiliki beragam kesenian tradisional yang sarat makna dan nilai-nilai luhur yang perlu dijaga keberlangsungannya.</p>
+                <p>Melalui platform digital ini, kami berharap dapat memberikan edukasi yang menarik tentang berbagai budaya daerah, mulai dari Reog Ponorogo yang megah, Ludruk yang penuh humor dan kritik sosial, hingga Gandrung Banyuwangi yang anggun. Setiap budaya memiliki cerita dan filosofi yang mendalam.</p>
+                <p>Mari bersama-sama menjaga warisan budaya leluhur kita agar tetap hidup dan berkembang di era modern. Budaya adalah identitas bangsa yang harus kita lestarikan untuk generasi mendatang.</p>
+            </div>
+            <div class="tentang-img">
+                <img src="Images/About/Tentang Image.jpg" alt="Tentang">
+            </div>
+        </div>
+    </section><!-- Biodata -->
+<section id="biodata">
+    <h2 class="section-title fade-in">Biodata Pembuat</h2>
+    <div class="biodata-grid-new">
+        <!-- Pujo -->
+        <div class="biodata-card-new fade-in">
+            <div class="biodata-avatar-new">
+                <img src="Images/Biodata/Pujo.jpg" alt="Pujo">
+            </div>
+            <h3>Pujo Lestariono Hadi Saputro</h3>
+            <p class="role-new">Front-End Developer</p>
+            <p class="nim-new">NIM: 245110600111020</p>
+            <p class="prodi-new">Prodi Pendidikan Bahasa Jepang</p>
+            <p class="fakultas-new">Fakultas Ilmu Budaya, Universitas Brawijaya</p>
+            
+            <div class="social-icons-new">
+                <a href="https://www.instagram.com/pujo_pst?igsh=cHZtbnh3a2RlejB3" target="_blank" class="social-link-new instagram-link">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+                    </svg>
+                    <span class="social-username">@pujo_pst</span>
+                </a>
+                
+                <div class="email-container-new">
+                    <svg class="icon-svg email-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                    </svg>
+                    <span class="email-text-new">pujolestariono@student.ub.ac.id</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Elen -->
+        <div class="biodata-card-new fade-in">
+            <div class="biodata-avatar-new">
+                <img src="Images/Biodata/Elen.jpg" alt="Elen">
+            </div>
+            <h3>Elen Anggita Lestari</h3>
+            <p class="role-new">UI/UX Designer</p>
+            <p class="nim-new">NIM: 245110600111005</p>
+            <p class="prodi-new">Prodi Pendidikan Bahasa Jepang</p>
+            <p class="fakultas-new">Fakultas Ilmu Budaya, Universitas Brawijaya</p>
+            
+            <div class="social-icons-new">
+                <a href="https://www.instagram.com/cinnamworolly?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link-new instagram-link">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+                    </svg>
+                    <span class="social-username">@cinnamworolly</span>
+                </a>
+                
+                <div class="email-container-new">
+                    <svg class="icon-svg email-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                    </svg>
+                    <span class="email-text-new">elenpendjep24@student.ub.ac.id</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Davana -->
+        <div class="biodata-card-new fade-in">
+            <div class="biodata-avatar-new">
+                <img src="Images/Biodata/Davana.jpg" alt="Davana">
+            </div>
+            <h3>Davana Firstiyan January Putri</h3>
+            <p class="role-new">Content Researcher</p>
+            <p class="nim-new">NIM: 245110600111014</p>
+            <p class="prodi-new">Prodi Pendidikan Bahasa Jepang</p>
+            <p class="fakultas-new">Fakultas Ilmu Budaya, Universitas Brawijaya</p>
+            
+            <div class="social-icons-new">
+                <a href="https://www.instagram.com/davanafjp?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link-new instagram-link">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" fill="currentColor"/>
+                    </svg>
+                    <span class="social-username">@davanafjp</span>
+                </a>
+                
+                <div class="email-container-new">
+                    <svg class="icon-svg email-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                    </svg>
+                    <span class="email-text-new">davanafirstiyan@student.ub.ac.id</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Maskot Eljavana -->
+<div class="maskot-container initial">
+    <div class="maskot-avatar">
+        <img src="Images/Maskot/Maskot Eljavana (Main).png" alt="Eljavana" style="display:block;">
+        <i class="fas fa-hand-sparkles" style="display:none;"></i>
+        <div class="maskot-badge">!</div>
+    </div>
+    <div class="speech-bubble">
+        <button class="close-bubble">&times;</button>
+        <h4><i class="fas fa-smile-beam"></i> Halo! Saya Eljavana</h4>
+        <p>Selamat datang di website Budaya Jawa Timur! Ada yang bisa saya bantu?</p>
+        <div class="speech-options">
+            <button class="speech-btn" data-action="budaya">
+                <i class="fas fa-theater-masks"></i> Lihat Daftar Budaya
+            </button>
+            <button class="speech-btn" data-action="galeri">
+                <i class="fas fa-images"></i> Jelajahi Galeri
+            </button>
+            <button class="speech-btn" data-action="map">
+                <i class="fas fa-map-marked-alt"></i> Lihat Map Interaktif
+            </button>
+            <button class="speech-btn" data-action="tentang">
+                <i class="fas fa-info-circle"></i> Tentang Website
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Welcome Message -->
+<div class="welcome-message">
+    <i class="fas fa-hand-peace"></i> Klik saya untuk memulai!
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Budaya Jawa Timur. Dibuat dengan ❤️ untuk pelestarian budaya nusantara.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="script.js"></script>
