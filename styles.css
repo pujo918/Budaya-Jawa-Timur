@@ -1398,3 +1398,256 @@
         background: #DAA520;
         border-radius: 10px;
     }
+
+    #youtube-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .yt-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 16px;
+        background: linear-gradient(135deg, rgba(218, 165, 32, 0.15), rgba(218, 165, 32, 0.05));
+        border: 2px solid #DAA520;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #DAA520;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .yt-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(218, 165, 32, 0.3), rgba(218, 165, 32, 0.1));
+        transition: left 0.3s ease;
+        z-index: -1;
+    }
+
+    .yt-button:hover {
+        border-color: #FFD700;
+        color: #FFD700;
+        box-shadow: 0 0 15px rgba(218, 165, 32, 0.4), inset 0 0 10px rgba(218, 165, 32, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .yt-button:hover::before {
+        left: 0;
+    }
+
+    .yt-button:active {
+        transform: translateY(0);
+        box-shadow: 0 0 10px rgba(218, 165, 32, 0.3), inset 0 0 5px rgba(218, 165, 32, 0.1);
+    }
+
+    .yt-icon-svg {
+        width: 20px;
+        height: 20px;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+    }
+
+    .yt-button:hover .yt-icon-svg {
+        transform: scale(1.15);
+    }
+
+    .yt-icon-svg {
+        width: 24px;
+        height: 24px;
+        cursor: pointer;
+    }
+
+    .yt-link-icon:hover .yt-icon-svg {
+        transform: scale(1.2);
+        color: #FFD700;
+    }
+
+    .yt-link-icon:active .yt-icon-svg {
+        transform: scale(0.95);
+    }
+
+    .yt-text {
+        display: inline;
+        letter-spacing: 0.5px;
+    }
+
+    /* Kritik dan Saran Section */
+    .kritik-saran-container {
+        background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+        border-radius: 10px;
+        padding: 1.2rem 1.5rem;
+        margin: 1rem 3% 2rem 3rem;
+        max-width: none;
+        width: calc(100% - 6rem);
+        border: 2px solid rgba(218, 165, 32, 0.3);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .kritik-saran-title {
+        color: #DAA520;
+        font-size: 1rem;
+        margin-bottom: 0.1rem;
+        text-align: left;
+        display: none;
+    }
+
+    .kritik-saran-subtitle {
+        color: #aaa;
+        text-align: left;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .kritik-saran-form {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex: 1;
+    }
+
+    .form-group:nth-child(1) {
+        flex: 0.9;
+    }
+
+    .form-group:nth-child(2) {
+        flex: 0.9;
+    }
+
+    .form-group:nth-child(3) {
+        flex: 1.5;
+    }
+
+    .form-group label {
+        color: #DAA520;
+        font-weight: 600;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(218, 165, 32, 0.4);
+        border-radius: 8px;
+        padding: 0.6rem 0.8rem;
+        color: #fff;
+        font-family: inherit;
+        font-size: 0.85rem;
+        transition: all 0.3s ease;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+        color: #777;
+        font-size: 0.8rem;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        outline: none;
+        background: rgba(255, 255, 255, 0.08);
+        border-color: #DAA520;
+        box-shadow: 0 0 12px rgba(218, 165, 32, 0.25);
+    }
+
+    .form-group textarea {
+        resize: none;
+        min-height: 42px;
+        max-height: 42px;
+        overflow-y: auto;
+    }
+
+    .form-group textarea::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .form-group textarea::-webkit-scrollbar-track {
+        background: rgba(218, 165, 32, 0.1);
+        border-radius: 3px;
+    }
+
+    .form-group textarea::-webkit-scrollbar-thumb {
+        background: #DAA520;
+        border-radius: 3px;
+    }
+
+    .form-group textarea::-webkit-scrollbar-thumb:hover {
+        background: #FFD700;
+    }
+
+    .btn-kirim-whatsapp {
+        background: linear-gradient(135deg, #25D366, #20BA5A);
+        border: none;
+        border-radius: 8px;
+        padding: 0.6rem 1.2rem;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        flex-shrink: 0;
+        height: fit-content;
+    }
+
+    .btn-kirim-whatsapp:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+    }
+
+    .btn-kirim-whatsapp:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+    }
+
+    .whatsapp-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .kritik-saran-container {
+            padding: 1rem 1.2rem;
+            margin: 0.8rem 1rem 2rem 1rem;
+            width: auto;
+        }
+
+        .kritik-saran-form {
+            flex-direction: column;
+        }
+
+        .form-group {
+            flex: 1 !important;
+        }
+
+        .btn-kirim-whatsapp {
+            width: 100%;
+        }
+    }

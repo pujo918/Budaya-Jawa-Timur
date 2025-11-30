@@ -5,42 +5,48 @@ const budayaData = [
         daerah: "Kabupaten Ponorogo",
         asal: "Berakar dari legenda Ki Ageng Kutu sebagai bentuk sindiran terhadap raja Majapahit. Konon, Ki Ageng Kutu menciptakan seni Reog sebagai kritik halus terhadap pemerintahan yang dianggap tidak adil. Topeng dadak merak yang besar dan berat melambangkan kebesaran dan kekuatan yang harus dipertanggungjawabkan.",
         deskripsi: "Reog Ponorogo adalah kesenian tradisional yang menampilkan tarian barongan, jathil, warok, dan dadak merak dengan topeng raksasa berbobot 50-60 kg. Pertunjukan Reog penuh dengan simbolisme, mulai dari sosok Singo Barong yang melambangkan kekuatan, hingga para penari jathil yang menggambarkan pasukan berkuda. Musik gamelan yang mengiringi menciptakan suasana magis dan menegangkan.",
-        img: "https://i.imgur.com/AiCj5OL.jpeg"
+        img: "https://i.imgur.com/AiCj5OL.jpeg",
+        youtubeId: "ZSQU5GFxIgo"
     },
     {
         title: "Ludruk",
         daerah: "Surabaya",
         asal: "Berkembang dari kesenian rakyat yang satir dan mengangkat cerita kehidupan sehari-hari masyarakat Jawa Timur. Ludruk lahir sebagai media hiburan sekaligus kritik sosial terhadap kehidupan masyarakat kota. Awalnya dipentaskan di alun-alun dan pasar untuk menghibur masyarakat kelas bawah.",
         deskripsi: "Ludruk adalah teater tradisional dengan tokoh Cak dan Ning yang ikonik, berisi humor, kritik sosial, dan tarian remo yang energik. Pertunjukan Ludruk selalu dimulai dengan tari remo pembuka, dilanjutkan dengan adegan lawakan yang menggelitik, dan diakhiri dengan lakon drama yang menyentuh kehidupan nyata. Bahasa yang digunakan adalah bahasa Jawa Suroboyoan yang khas dan mudah dipahami.",
-        img: "https://i.imgur.com/oHNuB7R.jpeg"
+        img: "https://i.imgur.com/oHNuB7R.jpeg",
+        youtubeId: "HXqX6AXsfmU"
     },
     {
         title: "Tari Remo",
         daerah: "Jombang",
         asal: "Tarian pembangkit semangat prajurit pada masa kerajaan kuno di Jawa Timur. Tari Remo konon diciptakan untuk memompa adrenalin dan keberanian para prajurit sebelum berperang. Gerakan-gerakan tegas dan dinamis mencerminkan jiwa pemberani dan pantang menyerah para kesatria.",
         deskripsi: "Tari Remo menampilkan gerakan tegas dan dinamis dengan kostum berwarna cerah, didominasi oleh hentakan kaki yang kuat dan ekspresif. Penari remo harus memiliki stamina tinggi karena tariannya penuh energi dan kekuatan. Setiap gerakan mengandung makna filosofis tentang keberanian, kejantanan, dan kehormatan. Musik gamelan yang mengiringi berirama cepat dan menghentak.",
-        img: "https://i.imgur.com/DAqmPpQ.jpeg"
+        img: "https://i.imgur.com/DAqmPpQ.jpeg",
+        youtubeId: "hKY_d067aEM"
     },
     {
         title: "Karapan Sapi",
         daerah: "Madura",
         asal: "Berawal dari lomba masyarakat petani untuk meningkatkan kualitas ternak sapi. Tradisi ini muncul dari kebiasaan para petani Madura yang saling adu kecepatan sapi mereka saat membajak sawah. Seiring waktu, tradisi ini berkembang menjadi kompetisi bergengsi yang menjadi kebanggaan setiap desa.",
         deskripsi: "Karapan Sapi adalah perlombaan sapi berpasangan yang ditarik di lintasan tanah sepanjang 100-120 meter, menjadi simbol kehormatan masyarakat Madura. Sapi-sapi yang dilombakan dirawat dengan istimewa, diberi pakan khusus, dan dilatih secara intensif. Joki yang mengendalikan harus memiliki keberanian dan keterampilan tinggi karena kecepatan sapi bisa mencapai 50 km/jam. Pemenang karapan sapi mendapat penghormatan tinggi di masyarakat.",
-        img: "https://i.imgur.com/qihit7Q.jpeg"
+        img: "https://i.imgur.com/qihit7Q.jpeg",
+        youtubeId: "yCA3DZyKbuw"
     },
     {
         title: "Gandrung Banyuwangi",
         daerah: "Banyuwangi",
         asal: "Persembahan rasa syukur atas hasil panen dan penghormatan terhadap Dewi Sri sebagai dewi kesuburan. Gandrung awalnya merupakan ritual agraris yang dilakukan oleh masyarakat Using di Banyuwangi. Tarian ini berkembang menjadi pertunjukan seni yang menggambarkan keindahan dan keanggunan wanita Banyuwangi.",
         deskripsi: "Gandrung Banyuwangi adalah tarian cinta dengan gerakan lembut dan gemulai, diiringi musik gamelan Osing yang khas, serta kostum tradisional Banyuwangi yang penuh warna. Penari gandrung mengenakan kain batik dan selendang sutra dengan hiasan bunga melati di kepala. Pertunjukan gandrung sering melibatkan interaksi dengan penonton yang diajak menari bersama. Tarian ini menggambarkan rayuan cinta yang halus dan penuh kesopanan.",
-        img: "https://i.imgur.com/myu0LuK.jpeg"
+        img: "https://i.imgur.com/myu0LuK.jpeg",
+        youtubeId: "-dxcamTUIsw"
     },
     {
         title: "Topeng Malang",
         daerah: "Malang",
         asal: "Terinspirasi dari cerita Panji dalam sejarah klasik Jawa yang populer sejak era Kerajaan Kediri dan Singosari. Topeng Malang berkembang sebagai media penyampaian cerita-cerita klasik kepada rakyat. Setiap topeng memiliki karakter unik yang mewakili tokoh-tokoh dalam cerita Panji.",
         deskripsi: "Topeng Malang adalah tarian drama yang menggunakan topeng berkarakter seperti Panji, Klana Sewandana, Gunung Sari, dan tokoh-tokoh lainnya. Setiap topeng memiliki warna dan ekspresi yang berbeda sesuai watak tokohnya. Pertunjukan Topeng Malang tidak hanya menampilkan tarian, tetapi juga dialog dan adegan dramatik. Musik gamelan Malangan yang mengiringi memiliki kekhasan tersendiri dengan tempo yang bervariasi sesuai suasana cerita.",
-        img: "https://i.imgur.com/ScZGXub.jpeg"
+        img: "https://i.imgur.com/ScZGXub.jpeg",
+        youtubeId: "HeOWd5hs7QQ"
     }
 ];
 
@@ -148,6 +154,16 @@ budayaCards.forEach(card => {
         document.getElementById('modal-asal').textContent = data.asal;
         document.getElementById('modal-deskripsi').textContent = data.deskripsi;
 
+        // Show YouTube link if available
+        const youtubeContainer = document.getElementById('youtube-container');
+        const ytLink = document.getElementById('yt-link');
+        if (data.youtubeId) {
+            ytLink.href = `https://youtu.be/${data.youtubeId}`;
+            youtubeContainer.style.display = 'block';
+        } else {
+            youtubeContainer.style.display = 'none';
+        }
+
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
@@ -182,6 +198,9 @@ galeriItems.forEach(item => {
             item.style.display = 'none';
         });
         
+        // Hide YouTube container for gallery
+        document.getElementById('youtube-container').style.display = 'none';
+        
         modal.classList.add('active');
         document.body.style.overflow = 'hidden';
     });
@@ -192,6 +211,7 @@ closeModalBtn.addEventListener('click', () => {
     document.querySelectorAll('.detail-item').forEach(item => {
         item.style.display = 'block';
     });
+    document.getElementById('youtube-container').style.display = 'none';
 });
 
 // Scroll Animation
@@ -753,3 +773,31 @@ function openGaleriModal(item) {
         document.body.style.overflow = 'hidden';
     }
 }
+
+// Kritik dan Saran - WhatsApp Link Handler
+document.addEventListener('DOMContentLoaded', function() {
+    const whatsappLink = document.querySelector('.btn-kirim-whatsapp');
+    
+    if (whatsappLink) {
+        whatsappLink.addEventListener('click', function(e) {
+            // Get form values
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            // Validate form
+            if (!nama || !email || !pesan) {
+                alert('Mohon isi semua field terlebih dahulu');
+                e.preventDefault();
+                return;
+            }
+            
+            // Create message
+            const message = `Halo, saya ingin memberikan kritik dan saran untuk website Budaya Jawa Timur.\n\nNama: ${nama}\nEmail: ${email}\n\nKritik dan Saran:\n${pesan}`;
+            
+            // Update href with message
+            const encodedMessage = encodeURIComponent(message);
+            whatsappLink.href = `https://wa.me/6285655904335?text=${encodedMessage}`;
+        });
+    }
+});
